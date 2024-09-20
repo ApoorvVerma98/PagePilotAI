@@ -17,6 +17,7 @@ const AllPagesIndex = () => {
       <Reviews />
       <Pricing />
       <FAQ />
+      {/* <Footer/> */}
     </div>
   );
 };

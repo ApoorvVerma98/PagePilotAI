@@ -346,10 +346,11 @@ export const RocketImage = styled('img')({
   left: "-10px",
   zIndex: 0,
   width: "100%",
+  filter: "blur(px)",
+
   maxHeight: "370px",
   maxWidth: "400px",
   transform: "rotate(0deg)",
-  
   // border: '10px solid red',
 
   opacity: 0.1,
@@ -370,10 +371,12 @@ export const AnimatedSphereContainer = styled('div')({
 export const AnimatedSphere = styled('img')({
   position: "absolute",
   right: "10px",
-  bottom: "-380px",
+  bottom: "-440px",
   zIndex: -1,
   width: "400px",
   height: "400px",
+  filter: "blur(12px)",
+
   opacity: 0.5,
   animation: `${smoothMove} 5s infinite ease-in-out`,
 });
@@ -390,4 +393,80 @@ export const VideoContainer = styled('div')({
 export const CdnVideo = styled('video')({
   borderRadius: "16px",
   zIndex: 2,
+  boxShadow: "-20px 20px 20px -20px #e2e8ff1f inset",
+  boxSizing: "border-box",
+
 });
+
+export const AnimatedConeContainer = styled('div')({
+
+})
+
+export const AnimatedCone = styled('img')({
+  position: "absolute",
+  left: "1px",
+  bottom: "-1120px",
+  zIndex: -1,
+  width: "280px",
+  height: "280px",
+  filter: "blur(12px)",
+  opacity: 0.5,
+  animation: `${smoothMove} 5s infinite ease-in-out`,
+});
+
+export const FourCardsContainer = styled('div')({
+  display: "flex",
+  marginTop: "40px",
+  // border: "1px solid red",
+  width: "90%",
+  justifyContent: "space-between",
+});
+
+
+export const CardWrapper = styled('div')({
+  fontFamily: "'DM Sans', sans-serif",
+  fontSize: "16px",
+  lineHeight: "20px",
+  textDecoration: "none solid rgb(0, 0, 0)",
+  color: "#ffffff",
+  background: `
+    radial-gradient(103.78% 100% at 50% 0%, #7692ff00 80.55%, #7a96ff0a),
+    radial-gradient(120.05% 100% at 50% 0%, #e2e8ff00 33.78%, #e2e8ff14),
+    #e2e8ff03
+  `,
+  height: "162px",
+  width: "22%",
+  border: "0px solid #E9ECEF",
+  padding: "3.5rem 1.5rem",
+  position: "relative",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  borderRadius: "1rem",
+  boxShadow: "-20px 20px 20px -20px #e2e8ff1f inset",
+  transition: "all",
+  boxSizing: "border-box",
+  
+
+});
+
+
+export const CardNumber = styled('div')({
+  fontSize: "50px",
+  fontWeight: "700",
+  marginBottom: "10px",
+});
+
+export const CardDescription = styled('div')({
+  fontSize: "18px",
+  fontWeight: "700",
+  textAlign: "center",
+  textWrap: "nowrap",
+  padding: "10px",
+});
+
+
+
+
+
+

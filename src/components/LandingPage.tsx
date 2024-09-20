@@ -24,14 +24,25 @@ import {
   CdnVideo,
   AnimatedSphereContainer,
   AnimatedSphere,
-
+  AnimatedConeContainer,
+  AnimatedCone,
+  FourCardsContainer,
+  CardIcon,
+  CardTitle,
+  CardText,
+  CardButton,
+  CardWrapper,
+  CardNumber,
+  CardDescription,
 } from "./LandingPageStyles";
 import AppLogo from "../assets/app_logo.svg";
 import loginIcon from "../assets/login_icon.svg";
 import stars from "../assets/stars.svg";
 import { StarsContainer } from "./LandingPageStyles";
 import AnimatedRocket from "../assets/heroRocket.png";
-import AnimateSphere from "../assets/animatedSphere.png"
+import AnimateSphere from "../assets/animatedSphere.png";
+import AnimateCone from "../assets/AnimateCone.png";
+import { Card } from "@mui/material";
 
 const LandingPage: React.FC = () => {
   return (
@@ -133,6 +144,28 @@ const LandingPage: React.FC = () => {
             src="https://cdn.shopify.com/videos/c/o/v/12a7f831d44f4b548d0a6b45839f743d.mp4"
           />
         </VideoContainer>
+        <AnimatedConeContainer>
+          <AnimatedCone src={AnimateCone} alt="" />
+        </AnimatedConeContainer>
+
+        <FourCardsContainer>
+          <CardWrapper>
+            <CardNumber>20x</CardNumber>
+            <CardDescription>Faster than a copywriter ⌛</CardDescription>
+          </CardWrapper>
+          <CardWrapper>
+            <CardNumber>+80h</CardNumber>
+            <CardDescription>Timesaved ⏰</CardDescription>
+          </CardWrapper>
+          <CardWrapper>
+            <CardNumber>3.5x</CardNumber>
+            <CardDescription>Faster than ChatGPT⚡</CardDescription>
+          </CardWrapper>
+          <CardWrapper>
+            <CardNumber>+$500</CardNumber>
+            <CardDescription>Money saved 💸</CardDescription>
+          </CardWrapper>
+        </FourCardsContainer>
       </MainContainer>
     </div>
   );
