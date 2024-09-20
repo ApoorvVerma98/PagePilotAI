@@ -349,6 +349,7 @@ export const RocketImage = styled('img')({
   maxHeight: "370px",
   maxWidth: "400px",
   transform: "rotate(0deg)",
+  
   // border: '10px solid red',
 
   opacity: 0.1,
