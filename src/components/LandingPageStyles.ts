@@ -166,7 +166,7 @@ export const Headline = styled('span')({
   marginBottom: '16px',
   padding: '0px',
   lineHeight: '65px',
-  wordSpacing: 10,
+  // wordSpacing: 10,
   "@media (min-width: 600px)": {
     // fontSize: '42px',
   },
@@ -176,7 +176,7 @@ export const Headline = styled('span')({
 
   span: {
     fontFamily: '"Plus Jakarta Sans", sans-serif',
-    fontWeight: 800,
+    fontWeight: 900,
     lineHeight: '65px',
     textDecoration: 'none solid rgba(0, 0, 0, 0)',
     textAlign: 'center',
